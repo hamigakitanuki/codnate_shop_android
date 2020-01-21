@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/opening_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="はじめる"
+        android:layout_marginTop="144dp"
+        android:layout_below="@id/opening_text"
+        android:background="@drawable/button_frame_style"
+        android:layout_marginRight="64dp"
+        android:layout_marginLeft="64dp"
+        />
+
+    <TextView
+        android:id="@+id/opening_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:gravity="center"
+        android:text="こうでねえと"
+        android:textSize="24dp"/>
+    <TextView
+        android:id="@+id/opening_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/opening_text"
+        android:gravity="center"
+        android:text="ショップ管理アプリへようこそ"
+        android:textSize="24dp"/>
+</RelativeLayout>

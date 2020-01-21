@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/start_1_image"
+        android:layout_width="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="320dp"
+
+        />
+    <TextView
+        android:id="@+id/start_1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ショップを登録する為に　　　　　　　　　　お店の現在地を登録します"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textSize="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:layout_below="@id/start_1_image"
+        />
+    <Button
+        android:id="@+id/start_1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_1_text"
+        android:background="@drawable/button_frame_style"
+        android:text="わかりました"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        />
+</RelativeLayout>

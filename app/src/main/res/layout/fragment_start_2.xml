@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/map_frame"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/layout_frame_style">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Fragment_start2"
+            />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/map_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map_frame"
+        android:layout_marginTop="48dp"
+        android:textSize="16dp"
+        android:text="お店の場所はここでよろしいでしょうか？"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/map_text"
+        android:gravity="center"
+        android:layout_marginTop="56dp"
+        >
+        <Button
+            android:id="@+id/start2_onemore_button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_frame_style"
+            android:backgroundTint="@color/primaryColor"
+            android:text="もう一度取得する"
+            android:layout_marginRight="8dp"
+            />
+        <Button
+            android:id="@+id/start2_yes_button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_frame_style"
+            android:text="はい"
+            android:layout_marginLeft="8dp"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
